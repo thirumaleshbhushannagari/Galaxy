@@ -1,0 +1,239 @@
+.hero video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.hero .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  color: white;
+  gap: 20px;
+  text-align: center;
+  padding: 0 30px;
+}
+.hero .content h1 {
+  font-size: 20px;
+}
+.hero .content .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.hero .content .button a {
+  padding: 10px 40px;
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+/****************About section******************/
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px 80px;
+  gap: 60px;
+  color: white;
+}
+.about img {
+  height: 400px;
+}
+.about .content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about .content p {
+  line-height: 20px;
+}
+
+@media (max-width: 1300px) {
+  .about {
+    gap: 30px;
+    padding: 30px 60px;
+  }
+}
+@media (max-width: 1000px) {
+  .about {
+    flex-wrap: wrap;
+  }
+  .about img {
+    height: auto;
+    width: 100%;
+  }
+
+  .about .content {
+    align-items: center;
+  }
+
+  .about .content p {
+    line-height: 25px;
+    text-align: center;
+  }
+}
+.content {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  color: black;
+}
+
+/****************services section******************/
+
+.services {
+  width: 100%;
+  padding: 0 50px;
+  margin-top: 60px;
+}
+.services img {
+  width: 80%;
+}
+
+.slick-side > div {
+  margin: 0 10px;
+}
+.slick-list {
+  margin: 0 -10px;
+}
+
+/****************call to action******************/
+
+.call-to-action {
+  width: 100%;
+  height: 300px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-direction: column;
+}
+.call-to-action h2 {
+  font-size: 40px;
+}
+.call-to-action button {
+  padding: 10px 40px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .call-to-action {
+    height: 250px;
+    gap: 30px;
+  }
+  .call-to-action h2 {
+    font-size: 30px;
+  }
+  .call-to-action button {
+    padding: 8px 30px;
+  }
+
+  @media (max-width: 350px) {
+    .call-to-action h2 {
+      font-size: 20px;
+    }
+  }
+}
+
+/**************** modul******************/
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999999999;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.overlay .modal {
+  width: 600px;
+  height: 400px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 50px;
+  text-align: center;
+}
+
+.overlay .modal .croos {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+/**************** FAQS******************/
+.faq {
+  width: 100%;
+  padding: 50px 150px;
+  color: white;
+}
+.faq .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-direction: column;
+  width: 100%;
+}
+
+.faq .item .question {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq .item .question img {
+  width: 40px;
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+}
+.faq .item .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+  background-color: black;
+  padding: 20px 30px;
+  border-radius: 5px;
+}
+
+.item .answers {
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+}
+
+.item .answers.show {
+  height: auto;
+  max-height: 999999px;
+  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+}
+
+.reverse {
+  transform: rotate(180deg);
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+}

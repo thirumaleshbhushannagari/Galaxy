@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span,
+li,
+button {
+  font-family: "outfit", sans-serif;
+  color: white;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.heading {
+  font-size: 40px;
+  text-align: center;
+  /* margin-top: 100px; */
+}
